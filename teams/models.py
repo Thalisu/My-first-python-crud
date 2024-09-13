@@ -9,4 +9,4 @@ class Team(models.Model):
     first_cup = models.DateField(null=True, blank=True)
 
     def __repr__(self):
-        return f"<[{self.id}] {self.nome} - {self.fifa_code}>"
+        return f"<[{self.id}] {self.name} - {self.fifa_code}>"
