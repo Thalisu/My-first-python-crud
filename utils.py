@@ -10,7 +10,7 @@ from typing import Dict
 def data_processing(data: Dict[str, str | int]) -> list[bool, Exception]:
     TITLES = data.get("titles")
     FIRST_CUP = (
-        int(data.get("first_cup")[:4]) if data.get("first_cup") else None
+        int(str(data.get("first_cup"))[:4]) if data.get("first_cup") else None
     )
 
     if TITLES < 0:
